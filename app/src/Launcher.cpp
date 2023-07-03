@@ -13,12 +13,15 @@
  *
  * SPDX-License-Identifier: Apache-2.0
  */
-// Hello World 
+// Testing comment
 #include "SeatAdjusterApp.h"
 #include "sdk/Logger.h"
 
 #include <csignal>
 
+void testfun() {
+    // test function for commit
+}
 void signal_handler(int sig) {
     velocitas::logger().error("App terminated due to: Signal {}", sig);
     exit(-1);
